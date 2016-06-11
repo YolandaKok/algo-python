@@ -2,6 +2,11 @@
 
 # definition of the partition subroutine
 
+def swap(a, b):
+    temp = a
+    a = b
+    b = temp
+
 def partition(a, l, r):
     # pivot first element of the array
     pivot = a[l]
@@ -15,3 +20,4 @@ def partition(a, l, r):
 
 def quicksort(a, l, r):
     q = partition(a, l, r)
+    
