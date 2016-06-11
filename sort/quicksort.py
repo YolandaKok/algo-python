@@ -20,7 +20,7 @@ def quicksort(a, l, r):
         quicksort(a, l, q - 1)
         quicksort(a, q + 1, r)
 
-b = [4, 3, 5, 7, 2]
+b = [8, 1, 3, 7, 2]
 i = 0
 quicksort(b, i, len(b) - 1)
 for j in range(i, len(b) - 1):
