@@ -11,9 +11,9 @@ def partition(a, l, r):
     # pivot first element of the array
     pivot = a[l]
     index = l
-    for i in range(l + 1, r:
+    for i in range(l + 1, r):
         if a[i] <= pivot:
-            index++
+            index+=1
             swap(a[i], a[index])
     swap(a[pivot], a[index])
     return index
