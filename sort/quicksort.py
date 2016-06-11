@@ -20,4 +20,5 @@ def partition(a, l, r):
 
 def quicksort(a, l, r):
     q = partition(a, l, r)
-    
+    quicksort(a, l, q)
+    quicksort(a, q + 1, r)
