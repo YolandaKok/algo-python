@@ -3,7 +3,9 @@
 # definition of the partition subroutine
 
 def partition(a, l, r):
-# pivot first element of the array
+    """Implements quicksort algorithm. Pivot is the first element of the list.
+       Input: list a, l-> left index, r-> right index
+       Output: ascending sequence of elements"""
     pivot = a[l]
     index = l
     for i in range(l + 1, r + 1):
