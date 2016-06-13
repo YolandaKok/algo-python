@@ -1,11 +1,16 @@
-# Quicksort implementation
+"""
+    ------------------------
+    Quicksort implementation
+    ------------------------
+    Worst case complexity: O(n^2)
+    pseudo code: Introduction to Algorithms 3rd edition
 
-# definition of the partition subroutine
+"""
 
 def partition(a, l, r):
-    """Implements quicksort algorithm. Pivot is the first element of the list.
-       Input: list a, l-> left index, r-> right index
-       Output: ascending sequence of elements"""
+    """
+        Pivot is the first element of the list.
+    """
     pivot = a[l]
     index = l
     for i in range(l + 1, r + 1):
@@ -17,6 +22,10 @@ def partition(a, l, r):
     return index
 
 def quicksort(a, l, r):
+    """
+        Input: list a, l-> left index, r-> right index
+        Output: ascending sequence of elements
+    """
     if l < r:
         q = partition(a, l, r)
         quicksort(a, l, q - 1)
