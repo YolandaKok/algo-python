@@ -15,4 +15,12 @@ def Merge(a, l, q, r):
     capacity1 = q - l + 1
     # bound for the second temporary array
     capacity2 = r - q
-    
+    # initialize the temporary arrays
+    for i in range(0, capacity1):
+        left[i] = 0
+
+    for j in range(0, capacity2):
+        right[j] = 0
+
+    # copy the elements of list a to the subarrays
+            
