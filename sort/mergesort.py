@@ -9,3 +9,10 @@ def Mergesort(a, l, r):
         # second half
         Mergesort(a, q + 1, r)
         Merge(a, l, q, r)
+
+def Merge(a, l, q, r):
+    # bound for the first temporary array
+    capacity1 = q - l + 1
+    # bound for the second temporary array
+    capacity2 = r - q
+    
