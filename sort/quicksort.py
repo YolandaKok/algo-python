@@ -8,9 +8,7 @@
 """
 
 def partition(a, l, r):
-    """
-        Pivot is the first element of the list.
-    """
+    """ Pivot is the first element of the list."""
     pivot = a[l]
     index = l
     for i in range(l + 1, r + 1):
